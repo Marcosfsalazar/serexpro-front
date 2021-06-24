@@ -3,7 +3,6 @@ import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import AddPlan from "./components/AddPlan";
-import Plan from "./components/Plan";
 import PlansList from "./components/PlansList";
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
         <Switch>
           <Route exact path={["/", "/plans"]} component={PlansList} />
           <Route exact path="/add" component={AddPlan} />
-          <Route path="/Plans/:id" component={Plan} />
         </Switch>
       </div>
     </div>
